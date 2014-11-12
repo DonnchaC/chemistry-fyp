@@ -1,8 +1,8 @@
 %input macros (i.e. write your own macros file called MacroFile1.tex)
 %\include{Macros/MacroFile1}
 
- \documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
-
+\documentclass[oneside,12pt, report]{Classes/CUEDthesisPSnPDF}
+%\documentclass[oneside,12pt]{report}
 
 \ifpdf
     \pdfinfo { /Title  (CUED PhD and MPhil Thesis Classes)
@@ -46,12 +46,12 @@
 \hfuzz=50pt
 
 % Put all the style files you want in the directory StyleFiles and usepackage like this:
-\usepackage{StyleFiles/watermark}
+% \usepackage{StyleFiles/watermark}
 \usepackage[version=3]{mhchem}
 
 % - use EPS with pdfLaTeX, essential for chemscheme ----
 %\usepackage[runs=2]{auto-pst-pdf}
-\usepackage[journal=rsc]{chemstyle}
+\usepackage[journal=rsc, tracking=bpchem]{chemstyle}
 \usepackage{chemmacros}
 
 \usepackage{siunitx}
@@ -59,6 +59,13 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{geometry} % Easy page layou
+\usepackage[small,compact]{titlesec}
+
+% \titleformat*{\section}{\LARGE\bfseries}
+% \titleformat*{\subsection}{\Large\bfseries}
+% \titleformat*{\subsubsection}{\large\bfseries}
+% \titleformat*{\paragraph}{\large\bfseries}
+% \titleformat*{\subparagraph}{\large\bfseries}
 
 % - optional command that make compound names easier to see ----
 \renewcommand*{\schemerefformat}{%
@@ -94,7 +101,7 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-\frontmatter % book mode onlyd
+% \frontmatter % book mode onlyd
 \pagenumbering{roman}
 \include{Acknowledgement/acknowledgement}
 \include{Abstract/abstract}
@@ -105,13 +112,13 @@
 \printnomenclature  %% Print the nomenclature
 \addcontentsline{toc}{chapter}{Nomenclature}
 
-\mainmatter % book mode only
+% \mainmatter % book mode only
 \include{Introduction/introduction}
 \include{Results/results}
 \include{Conclusions/conclusions}
 \include{Experimental/experimental}
 
-\backmatter % book mode only
+% \backmatter % book mode only
 \appendix
 \include{Appendix1/appendix1}
 
