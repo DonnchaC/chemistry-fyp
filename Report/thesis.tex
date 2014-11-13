@@ -1,7 +1,7 @@
 %input macros (i.e. write your own macros file called MacroFile1.tex)
 %\include{Macros/MacroFile1}
 
-\documentclass[oneside,12pt, report]{Classes/CUEDthesisPSnPDF}
+\documentclass[oneside,12pt, article]{Classes/CUEDthesisPSnPDF}
 %\documentclass[oneside,12pt]{report}
 
 \ifpdf
@@ -67,8 +67,11 @@
 
 % \titleformat*{\section}{\LARGE\bfseries}
 % \titleformat*{\subsection}{\Large\bfseries}
+\titleformat{\section}
+{\normalfont\large\bfseries}{\thesection}{0.7em}{}
+
 \titleformat{\subsection}
-{\normalfont\large\bfseries}{\thesubsection}{0.8em}{}
+{\normalfont\large\bfseries}{\thesubsection}{0.6em}{}
 % \titleformat*{\subsubsection}{\large\bfseries}
 % \titleformat*{\paragraph}{\large\bfseries}
 % \titleformat*{\subparagraph}{\large\bfseries}
