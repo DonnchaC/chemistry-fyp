@@ -50,8 +50,12 @@
 \usepackage[version=3]{mhchem}
 
 % - use EPS with pdfLaTeX, essential for chemscheme ----
-%\usepackage[runs=2]{auto-pst-pdf}
-\usepackage[journal=rsc, tracking=bpchem]{chemstyle}
+% \usepackage[runs=2]{auto-pst-pdf}
+\usepackage{chemnum}
+\usepackage[journal=rsc]{chemstyle}
+\usepackage{bpchem,upgreek}
+% \cmpdsetup{sub-input-sep=!}
+
 \usepackage{chemmacros}
 
 \usepackage{siunitx}
@@ -63,6 +67,8 @@
 
 % \titleformat*{\section}{\LARGE\bfseries}
 % \titleformat*{\subsection}{\Large\bfseries}
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{0.8em}{}
 % \titleformat*{\subsubsection}{\large\bfseries}
 % \titleformat*{\paragraph}{\large\bfseries}
 % \titleformat*{\subparagraph}{\large\bfseries}
@@ -71,6 +77,12 @@
 \renewcommand*{\schemerefformat}{%
   \color{magenta}\textit
 }%
+
+% - Don't format titles in PDF outline
+\pdfstringdefDisableCommands{%
+  \let\IUPAC\@firstofone
+  \let\|\relax
+}
 
 \doublespacing
 
