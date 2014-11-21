@@ -50,7 +50,7 @@
 \usepackage[version=3]{mhchem}
 
 % - use EPS with pdfLaTeX, essential for chemscheme ----
-% \usepackage[runs=2]{auto-pst-pdf}
+\usepackage[runs=2]{auto-pst-pdf}
 \usepackage{chemnum}
 \usepackage[journal=rsc]{chemstyle}
 \usepackage{bpchem,upgreek}
@@ -62,8 +62,15 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage{geometry} % Easy page layou
+\usepackage{geometry} % Easy page layout
 \usepackage[small,compact]{titlesec}
+\usepackage{glossaries}
+
+\usepackage{pgfplots}
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+\tikzexternalize
+
 
 % \titleformat*{\section}{\LARGE\bfseries}
 % \titleformat*{\subsection}{\Large\bfseries}
@@ -122,11 +129,17 @@
 \include{Abstract/abstract}
 
 \tableofcontents
+% Generate the glossary
+% \makeglossaries
+
 \listoffigures
 \listofschemes
-\printnomenclature  %% Print the nomenclature
-\addcontentsline{toc}{chapter}{Nomenclature}
 
+
+% \printnomenclature  %% Print the nomenclature
+% \addcontentsline{toc}{chapter}{Nomenclature}
+
+\pagenumbering{arabic}
 % \mainmatter % book mode only
 \include{Introduction/introduction}
 \include{Results/results}
