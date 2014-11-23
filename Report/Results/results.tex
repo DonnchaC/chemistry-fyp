@@ -11,62 +11,140 @@
     \graphicspath{{Results/ResultsFigs/EPS/}{Results/ResultsFigs/}}
 \fi
 
-\section{Synthesis of S-protected 2-mercapto-2-phenylacetaldehyde ligation auxillaries}
+\cmpd*{cmpd:bromoacid}
+\cmpd*{cmpd:meoamide}
+\cmpd*{cmpd:bromoamide.{one,two}}
+\cmpd*{cmpd:xanthateoamide.{one,two}}
+\cmpd*{cmpd:thioamide.{one,two}}
+\cmpd*{cmpd:DMTamide.{one,two}}
+\cmpd*{cmpd:DMTaldehyde.{one,two}}
 
+The experiments conducted and results are set out and described. Results should be discussed and set in context with the recent literature so that their significance is evident. A clear story should be developed so that the reader is lead through the project, understanding why experiments were performed and the  relevance of the results at each stage. The R\&D section should lead on from the introduction, and into the conclusion, building on ideas from the introduction and clearly highlighting key results for the conclusion.
 
-The expeiments conducted and results are set out and described. Results should be discussed and set in context with the recent literature so that their significance is evident. A clear story should be developed so that the reader is lead through the project, understanding why experiments were performed and the  relevance of the results at each stage. The R\&D section should lead on from the introduction, and into the conclusion, building on ideas from the introduction and clearly highlighting key results for the conclusion.
+\section{Synthesis of 2-mercapto-2-phenylacetaldehyde auxiliaries \cmpd+{cmpd:DMTaldehdye}}
 
-And now I begin my first chapter here ...
+  \begin{scheme}[H]
+      \cmpdref{cmpd:DMTaldehyde.one}
+      \cmpdref{cmpd:DMTaldehyde.two}
+      \includegraphics[width=\textwidth]{twoauxiliaries.eps}
+      \caption{2-mercapto-2-phenylacetaldhyde ligation auxiliaries.\label{sch:TwoAuxiliaies}}
+  \end{scheme}
 
-Here is an equation\footnote{the notation is explained in the nomenclature section :-)}:
-\begin{eqnarray}
-CIF: \hspace*{5mm}F_0^j(a) &=& \frac{1}{2\pi \iota} \oint_{\gamma} \frac{F_0^j(z)}{z - a} dz
-\end{eqnarray}
-\nomenclature[zcif]{$CIF$}{Cauchy's Integral Formula}                                % first letter Z is for Acronyms
-\nomenclature[aF]{$F$}{complex function}                                                   % first letter A is for Roman symbols
-\nomenclature[gp]{$\pi$}{ $\simeq 3.14\ldots$}                                             % first letter G is for Greek Symbols
-\nomenclature[gi]{$\iota$}{unit imaginary number $\sqrt{-1}$}                      % first letter G is for Greek Symbols
-\nomenclature[gg]{$\gamma$}{a simply closed curve on a complex plane}  % first letter G is for Greek Symbols
-\nomenclature[xi]{$\oint_\gamma$}{integration around a curve $\gamma$} % first letter X is for Other Symbols
-\nomenclature[rj]{$j$}{superscript index}                                                       % first letter R is for superscripts
-\nomenclature[s0]{$0$}{subscript index}                                                        % first letter S is for subscripts
+  As part of this project we synthesized a set of two substituted S-protected 2-mercapto-2-phenylacetaldehyde auxiliaries \cmpd+{cmpd:DMTaldehdye.one, cmpd:DMTaldehyde.two} starting from the commerical available substituted phenylacetic acids via a 6-step route (\ref{sch:OverallScheme}) with good yields overall.
 
-\subsection{Second Paragraph}
-and here I write more ...\cite{texbook}
+  Both auxiliaires were synthesised bearing an acid-labile 4,4'-dimethoxytrityl (DMT) thiol protecting group to prevent thioacetal formation. The DMT protecting group was selected as it is rapidly removed  under the TFA conditions employed when cleaving the auxiliary peptides from the solid support.
 
-\subsection{sub first paragraph}
-... and some more ...
+  \begin{scheme}[H]
+      \cmpdref{cmpd:bromoacid}
+      \cmpdref{cmpd:meoamide}
+      \cmpdref{cmpd:bromoamide.{one,two}}
+      \cmpdref{cmpd:xanthateoamide.{one,two}}
+      \cmpdref{cmpd:thioamide.{one,two}}
+      \cmpdref{cmpd:DMTamide.{one,two}}
+      \cmpdref{cmpd:DMTaldehyde.{one,two}}
+      \includegraphics[width=\textwidth]{overall-scheme.eps}
+      \caption{Overall route for auxiliary synthesis.\label{sch:OverallScheme}}
+  \end{scheme}
 
-Now I would like to cite the following: \cite{latex} and \cite{texbook}
-and \cite{Rud73}.
+  The synthesis of the 4-bromophenyl auxiliary \cmpd{cmpd:DMTaldehyde.one} proceeded without difficult via benzylic bromination of 4-bromophenylacetic acid to \cmpd+{cmpd:bromoacid}. Attempts to synthesize 2-bromo-2-(4-methoxyphenyl)acetic acid under the same reaction conditions failed with the formation of a complex mixture of products. Efforts to carry out the radical bromination of 4-methoxyphenylacetic acid under milder conditions (NBS, AIBN, \SI{30}{\celsius}) also yielded a complex mixture of products which were not readily purifiable by flash chromatography.
 
-I would also like to include a picture ...
+  A literature review indicated that 4-methoxyphenylacetic acid can undergo rapid decarboxylation to produce a benzylic radical after the formation of an intermediate aromatic radical cation [decarboxylation]. The route to \cmpd{cmpd:bromoamide.two} was modified by forming the Weinreb amide \cmpd{cmpd:meoamide} first which does cannot undergo this decarboxylation process. A subsequent AIBN promoted benzylic bromination on this substrate proceeded cleanly to afford \cmpd+{cmpd:bromoamide.two} which was used without further purifcation. The formation of the Weinreb amide before radical bromination is likely to provide the most consistant results when synthesising future substituted 2-mercapto-2-phenyl auxilaries.
+  % TODO: NMR proof ^ ^
 
-\begin{figure}[!htbp]
-  \begin{center}
-    \leavevmode
-    \ifpdf
-      \includegraphics[height=6in]{aflow}
-    \else
-      \includegraphics[bb = 92 86 545 742, height=6in]{aflow}
-    \fi
-    \caption{Airfoil Picture}
-    \label{FigAir}
-  \end{center}
-\end{figure}
+  The subsequent steps to synthesise the protected auxillaries \cmpd+{cmpd:DMTaldehyde.one, cmpd:DMTaldehyde.two} proceed smoothly and both were obtained as red crystalline solids in good yields overall (\cmpd+{cmpd:DMTaldehyde.one}=\SI{12}{\percent}, \cmpd+{cmpd:DMTaldehyde.two}=\SI{18}{\percent}).
 
-% above code has been macro-fied in Classes/MacroFile.tex file
-%\InsertFig{\IncludeGraphicsH{aflow}{6in}{92 86 545 742}}{Airfoil Picture}{FigAir}
+  \begin{figure}[H]
+    \centering
+    \includegraphics{br-absorbance.eps}
+    \caption{Absorbance of 4-bromophenyl auxiliary amide \cmpdref{cmpd:thioamide.one}}
+    \label{fig:bramideabsorbance}
+  \end{figure}
 
-So as we have now labelled it we can reference it, like so (\ref{FigAir}) and it
-is on Page \pageref{FigAir}. And as we can see, it is a very nice picture and we
-can talk about it all we want and when we are tired we can move on to the next
-chapter ...
+\section{Synthesis of model peptide}
 
-I would also like to add an extra bookmark in acroread like so ...
-\ifpdf
-  \pdfbookmark[2]{bookmark text is here}{And this is what I want bookmarked}
-\fi
+In this work, the peptide \ce{HGRAEYSGLG-NH2} was choosen as a model peptide for examining the auxiliary promoted ligation at a non N-terminal cysteine junction. The peptide was synthesised using a standard Fmoc SPPS strategy using Tentagel Rink amide resin on [PEPTIDE SYNTHESISEr]. HCTU/Oxyma, DOUBLE COUPLING, CAPPING, DEPROTECTION.
+
+\section{Coupling of auxiliaries to model peptide}
+
+  \begin{scheme}[H]
+      \cmpdref{cmpd:DMTaldehyde.{one,two}}
+      \cmpdref{cmpd:auxiliary-peptide.{one,two}}
+      \includegraphics[width=\textwidth]{reductive-amination.eps}
+      \caption{Reductive amination of auxiliary to peptide.\label{sch:reductiveamination}}
+  \end{scheme}
+
+  The auxiliary aldehydes \cmpd+{cmpd:DMTaldehyde.one, cmpd:DMTaldehyde.two} were coupled to the N-terminal of the model peptide under standard reductive amination conditions as shown in \ref{sch:reductiveamination}. A solution of respective auxiliary and\ch{NaBH3CN} in NMP:IPA:AcOH (3:1:\SI{5}{\percent}) was shaken with the model peptide on solid support for \SI{12}{\hour}. The peptide auxiliaries were subsequently cleaved from the resin with TFA/TIS, precipitated from cold ether and purified by preparative HPLC.
+
+  UPLC plot showing pure auxillary-peptides
+
+  \subsection{Ligation of auxiliary peptides and thioester}
+
+    \begin{scheme}[H]
+        \cmpdref{cmpd:auxiliarypeptide.{one,two}}
+        \cmpdref{cmpd:auxiliarydipeptide.{one,two}}
+        \includegraphics[width=\textwidth]{auxiliary-ligation.eps}
+        \caption{Native Chemical Ligation of auxiliary-peptide and thioester.\label{sch:auxiliaryncl}}
+    \end{scheme}
+
+    The auxiliary peptides \cmpd{cmpd:auxiliarypeptide.{one,two}} were combined with the model LYRAG peptide thioester \cmpd+{cmpd:thioester} and lyopholised. A ligation buffer (\SI{100}{\milli\Molar} \ch{Na2HPO4}, \SI{100}{\milli\Molar} TCEP, \SI{3}{\percent} thiophenol, adjusted to pH 7.5 with NaOH) was prepared with degassed millipore. TCEP acts to reduce any formed disulfide bonds. Thiophenol promotes the transthioesterification the the LYRAG alkyl thioester to a more reactive aryl thioester.
+    [http://pubs.acs.org.elib.tcd.ie/doi/abs/10.1021/ja962656r]
+    Acetonitrile (\SI{10}{\percent} was added to ensure complete dissolution of both peptides in the ligation buffer.
+
+    The ligation was followed was measured by analysing aliquots of the ligation mixture by UPLC.
+
+    The ligation progress was monitored by RP-HPLC analysis of aliquots of the reaction mixture over time. The ligation was observed to occur rapidly with comple consumption of the auxiliay peptide \cmpd+{cmpd:auxiliarypeptide.one} observed at the \SI{2.5}{\hour} point.
+
+    [CONFIRM WITH HPLC graph].
+
+    The ligation product \cmpd{cmpd:auxiliarydipeptide.one} was purified by preparative scale RP-HPLC to yield the isolated ligated auxiliary peptide in \SI{80}{\percent} yield.
+
+    [CONFIRM WITH MS DATA AND HPLC CHART]
+
+    compare these results with previous work, good yields
+
+  \subsection{Auxiliary cleavage from ligated peptide}
+
+    The final aim of this research was to explore the conditions affecting the radical induced cleavage of the auxiliary to form the desired native peptide. Previous work in this group has indicated that the cleavage occurs by a radical process but the exact mechanism is currently unknown.
+
+    \subsection{Cleavage Condtions}
+
+    To explore the conditions, both ligated auxiliary peptides were subjected to the cleavage conditions at varied concentrations and temperatures.
+
+    TABLE of reactions for 4-bromo
+
+    The 4-bromophenyl auxiliary \cmpd{cmpd:auxiliarydipeptide.one} showed an accelerated rate of cleavage and was almost complete removal was observed  after \SI{4}{\hour} (\SI{100}{\milli\molar}, \SI{50}{\celsius}). HPLC analysis of the products showed the formation of considerable byproducts via scission of the peptide amide backbone. The cleavage was repeated at varying temperatures and TCEP concentrations in an effort to minimise the observed peptide degredation.
+
+    Graph of rates of cleavage for varying conditions
+
+    TODO: SCHEME FOR AUXILARY CLEAVAGE TO GIVFREE DIPEPTIDE
+
+    Describe the cleavage experiments performed. differen
+
+    Theory about acceleated cleavage rate in 4-bromophenyl aux. Inductive effects with stabilize the the formation of a benzyl radical.
+
+    \subsubsection{Cleavage Mechanism}
+
+    A number of high resolution MALDI experiments were performed on the \cmpd{cmpd:auxiliarydipeptide.one} post cleavage reaction mixture. It was hoped that the characteristic bromine isotope twin MS peaks would allow for  auxiliary fragments to be identified from the complex post cleavage reaction mixture.
+
+    A characteristic twin peak signal of the correct mass difference were not observered in the initial MALDI experiment. It is possible that the formed auxiliary fragments may not be readily protonated and in turn wouldn't be accelerated into the mass spectrometer. It may also be a case that formed  auxiliary fragments undergo radical self-polymerisation. These dimers or polymers would instead display a 1:2:1 type mass spectral pattern.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+\multirow{2}{*}{Concentration (mM)} & \multirow{2}{*}{Temperature (C)} & \multicolumn{5}{c}{Conversion (\%)} \\ \cmidrule(l){3-7}
+                                    &                                  & 1h    & 2h   & 4h   & 6h    & 24h   \\ \cmidrule(r){1-2}
+100                                 & 50                               & 55    & 82   & 99   & 100   &       \\
+20                                  & 50                               &       &      &      &       &       \\
+100                                 & 40                               &       &      &      &       &       \\
+400                                 & RT                               &       &      &      &       &       \\ \bottomrule
+\end{tabular}
+\caption{Cleavage of 4-bromophenyl auxiliary}
+\label{bromoauxiliarycleavagedata}
+\end{table}
+
+    explore mechanism of auxiliary cleavage based on observed products
+
 % ------------------------------------------------------------------------
 
 

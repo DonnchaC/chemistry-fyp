@@ -5,35 +5,56 @@
     \graphicspath{{Experimental/ExperimentalFigs/EPS/}{Experimental/ExperimentalFigs/}}
 \fi
 
-\begin{scheme}[ht]
-    \cmpdref{cmpd:dibromoPAA}
-    \includegraphics{4-BrPAA-bromination.eps}
-    \caption{Benzylic bromination of 2(4-bromophenyl)acetic acid.\label{sch:BenzylBromination}}
-\end{scheme}
+%-----------------------------------------------------------
+
+\section{Materials and Methods}
 
 General remarks re chemicals, equipements, machines used for NMR, absorbance, prep UPLC, peptide synthesiser, HPLC
 
 All flash chromatography was carried out on XX mesh silica gel. TLC
 
+%-----------------------------------------------------------
+
+\section{Solid Phase Peptide Synthesis}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\IUPAC{2-bromo\|-2-(4\|-bromophenyl)\|acetic acid} (\cmpd+{cmpd:dibromoPAA})}
+\subsection{Synthesis of model peptide GRAEYSGLG by Fmoc-SPPS}
+
+The model peptide GRAEYSGLG was synthesised by Fmoc solid phase peptide synthesis techniques on a XXXXXX peptide synthesiser (double )
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Thioester Synthesis}
+
+thioesters
+
+LYRAG metcaptopropionic acid lysine.
+alkyl thio ester.
+thiophenol added to produce more reactive thio ester
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------
+
+\section{Chemistry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{\IUPAC{2-bromo\|-2-(4\|-bromophenyl)\|acetic acid} (\cmpd+{cmpd:dibromoPAA})}
 
 \begin{experimental}[delta=(ppm),pos-number=sub,use-equal]
   \sisetup{separate-uncertainty,per-mode=symbol,detect-all,range-phrase=--}
 
-\IUPAC{2-(4\-bromophenyl)\|acetic acid} (\SI{10.6}{\gram}, \SI{46.5}{\milli\mol}) and \IUPAC{N-bromo\|succinimide} (\SI{9.932}{\gram}, \SI{55.8}{\milli\mol}) were suspended in \ce{CCl4} (\SI{250}{\milli\L}) and the mixture was irradiated under refluxed with a \SI{240}{\watt} tungsten lamp.
+A suspension of \IUPAC{2-(4\-bromophenyl)\|acetic acid} (\SI{10.6}{\gram}, \SI{46.5}{\milli\mol}) and \IUPAC{N-bromo\|succinimide} (\SI{9.932}{\gram}, \SI{55.8}{\milli\mol}) in \ce{CCl4} was irradiated under refluxed with a \SI{240}{\watt} tungsten lamp.
 
-An NMR of the crude mixture after three hours indicated incomplete conversion of the starting material. An additional 0.5 eq of NBS was addded and the reaction was again irradiated under reflux for a furthur 3 hours. The mixture was cooled, filtered, and the solvent along with elemental bromine were removed \invacuo. The residual orange solid was purified by flash column chromatography (2:1 cyclohexane:ethyl acetate with \SI{1}{\percent} formic acid). Any residual formic acid was removed by coevaporation with ethyl acetate to yield \cmpd{cmpd:dibromoPAA} (\SI{9.733}{\gram}, \SI{33.1}{\milli\mole}, \SI{71}{\percent}) as an off-white crystalline solid.
+An additional 0.5 eq of NBS was addded after \SI{3}{\hour} and the reaction was mainted for a furthur \SI{3}{\hour}, at which point the mixture was cooled, filtered, and the concentrated \invacuo. The residual orange solid was purified by flash column chromatography (2:1 cyclohexane:ethyl acetate with \SI{1}{\percent} formic acid). Formic acid was removed by co-evaporation with ethyl acetate to yield \cmpd{cmpd:dibromoPAA} (\SI{9.733}{\gram}, \SI{33.1}{\milli\mole}, \SI{71}{\percent}) as an off-white crystalline solid.
 
-\NMR(500)[CDCl3] \val{5.31} (s, \#{1}, \pos{5}), \val{7.42--7.45} (m, \#{2}, \pos{11}), \val{7.50--7.53} (m, \#{2}, \pos{11}.
+\NMR(500)[CDCl3] 7.52 (dt, J = 8.6, 2.1 Hz, 2H, ArH), 7.44 (dt, J = 8.5, 2.0 Hz, 2H, ArH), 5.31 (s, 1H, CBrH).
 %
-\NMR{13,C}(150)[CDCl3] \val{44.72} ($+$, \#{1}, \pos{1}), \val{23.4} ($+$,
-\#{8}, \pos{5}), \val{126.0} ($+$, \#{4}, \pos{9}), \val{128.2} ($+$, \#{8},
-\pos{3}), \val{130.8} ($+$, \#{2}, \pos{12}), \val{133.6} ($+$, \#{2},
-\pos{11}), \val{137.0} ($+$, \#{4}, \pos{8}), \val{138.6} (q, \#{4},
-\pos{2}), \val{140.6} (q, \#{2}, \pos{10}), \val{140.8} (q, \#{8}, \pos{4}),
-\val{141.8} (q, \#{4}, \pos{6}), \val{145.6} (q, \#{2}, \pos{7})
+\NMR{13,C}(150)[CDCl3] 172.17, 134.24, 132.37, 130.63, 124.14, 44.97.
+
+
 %
   % \data{MS}[DCP, EI, \SI{60}{\electronvolt}] \val{703} (2, \ch{M+}), \val{582}
   % (1), \val{462} (1), \val{249} (13), \val{120} (41), \val{105} (100).
@@ -41,20 +62,12 @@ An NMR of the crude mixture after three hours indicated incomplete conversion of
   % \data{MS}[\ch{MeOH + H2O + KI}, ESI, \SI{10}{\electronvolt}] \val{720} (100,
   % \ch{M+ + OH-}), \val{368} (\ch{M+ + 2 OH-}).
   % %
-  % \data{IR}[KBr] \val{3443} (w), \val{3061} (w), \val{2957} (m), \val{2918}
-  % (m), \val{2856} (w), \val{2729} (w), \val{1725} (w), \val{1606} (s),
-  % \val{1592} (s), \val{1545} (w), \val{1446} (m), \val{1421} (m), \val{1402}
-  % (m), \val{1357} (w), \val{1278} (w), \val{1238} (s), \val{1214} (s),
-  % \val{1172} (s), \val{1154} (m), \val{1101} (w), \val{1030} (w), \val{979}
-  % (m), \val{874} (m), \val{846} (s), \val{818} (w), \val{798} (m), \val{744}
-  % (w), \val{724} (m), \val{663} (w), \val{586} (w), \val{562} (w), \val{515}
-  % (w).
   %
 \end{experimental}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\IUPAC{N-methoxy\|-2-\|(4-methoxyphenyl)-\|\|N-\|methyl\|acetamide} (\cmpd+{cmpd:meoamide})}
+\subsection{\IUPAC{N-methoxy\|-2-\|(4-methoxyphenyl)-\|\|N-\|methyl\|acetamide} (\cmpd+{cmpd:meoamide})}
 
 To a stirred solution of \IUPAC{2-(4-methoxyphenyl)acetic acid} (\SI{1.662}{\gram}, \SI{10}{\milli\mol}) in dry DCM (\SI{50}{\milli\litre}) under argon at \SI{0}{\celsius} was added \IUPAC{N,O-dimethyl\|hydroxylamine hydrochloride} (\SI{0.975}{\gram}, \SI{10}{\milli\mol}) and triethylamine (\SI{1.4}{\milli\litre}, {\SI{10}{\milli\mol}) followed by \IUPAC{1-(3\-dimethyl\|aminopropyl)\-3\-ethyl\|carbo\|diimide hydrochloride} (\SI{2.013}{\gram}, \SI{10.5}{\milli\mol}) in portions over \SI{20}{\minute}. The mixture was allowed to rise to room temperature after stirring at \SI{0}{\celsius} for a further \SI{15}{\minute}.
 
@@ -62,64 +75,104 @@ After \SI{1}{\hour} the reaction mixture was washed with aq. \ce{HCl} (\SI{1}{\M
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\IUPAC{2-bromo-\|2-\|(4-bromophenyl)-\|N-\|methoxy-N-\|methylacetamide} (\cmpd+{cmpd:bromoamide.one})}
+\subsection{\IUPAC{2-bromo-\|2-\|(4-bromophenyl)-\|N-\|methoxy-N-\|methylacetamide} (\cmpd+{cmpd:bromoamide.one})}
 
 To a stirred solution of \cmpd{cmpd:dibromoPAA} (\SI{4.409}{\gram}, \SI{15}{\milli\mol}) in dry DCM (\SI{120}{\milli\litre}) under argon at \SI{0}{\celsius} was added N,O-dimethylhydroxylamine hydrochloride (\SI{1.463}{\gram}, \SI{15}{\milli\mol}) followed by 1-(3-Dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride (\SI{3.019}{\gram}, \SI{15.75}{\milli\mol}) in portions over \SI{15}{\minute}. Triethylamine (\SI{3.14}{\milli\litre}, \SI{22.5}{\milli\mol}) was then added and the mixture was allowed to rise to room temperature after stirring at \SI{0}{\celsius} for a further \SI{15}{\minute}.
 
 After \SI{1}{\hour} the reaction mixture was washed with aq. \ce{HCl} (\SI{1}{\Molar}, 3x\SI{50}{\milli\litre}), sat. \ce{NaHCO3} (3x\SI{50}{\milli\litre}), brine (1x\SI{50}{\milli\litre}) and dried over \ce{MgSO4}. The solvent was removed \invacuo to yield \cmpd{cmpd:bromoamide.one} (\SI{4.586}{\gram}, \SI{13.6}{\milli\mol}, \SI{91}{\percent} crude yield) as a clear yellow oil which was not further purified.
 
+\NMR(500)[CDCl3] 7.47 (dt, J = 8.5, 2.5, 1.9 Hz, 2H, ArH), 7.35 (dt, J = 8.6, 2.5, 1.9 Hz, 2H, ArH), 6.04 (s, 1H, CSH), 4.61 (q, J = 7.1 Hz, 2H, OCH2-C), 3.63 (s, 3H, OCH3), 3.21 (s, 3H, NCH3), 1.40 (t, J = 7.1 Hz, 3H, C-CH3).
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\IUPAC{2-bromo-2-\|(4-methoxyphenyl)-\|N-\|methoxy-N-\|methyl\|acetamide} (\cmpd+{cmpd:bromoamide.two})}
+\subsection{\IUPAC{2-bromo-2-\|(4-methoxyphenyl)-\|N-\|methoxy-N-\|methyl\|acetamide} (\cmpd+{cmpd:bromoamide.two})}
 
 To a solution of \cmpd{cmpd:meoamide} (\SI{0.837}{\gram}, \SI{4}{\milli\mol}) in \ce{CCl4} (\SI{20}{\milli\litre}) was added N-bromosuccinimide (\SI{1.068}{\gram}, \SI{6}{\milli\mol}) and azobisisobutyronitrile (\SI{0.067}{\gram}, \SI{0.4}{\milli\mol}). The reaction was stirred overnight at \SI{40}{\celsius}}, washed with water (2x{\SI{20}{\milli\litre}), brine (\SI{20}{\milli\litre}), dried over \ce{MgSO4} and the solvent removed \invacuo to yield \cmpd{cmpd:bromoamide.two} (\SI{0.962}{\gram}, \SI{3.34}{\milli\mol}, \SI{83}{\percent} crude) as a clear yellow oil which was not further purified.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\IUPAC{S-(1-(4\|-bromophenyl)-2\|-(methoxy\|(methyl)amino)\|-2\|-oxoethyl) O-ethyl carbono\|dithioate} (\cmpd+{cmpd:xanthateamide.one})}
+\subsection{\IUPAC{S-(1-(4\|-bromophenyl)-2\|-(methoxy\|(methyl)amino)\|-2\|-oxoethyl) O-ethyl carbono\|dithioate} (\cmpd+{cmpd:xanthateamide.one})}
 
 A solution of \cmpd{cmpd:bromoamide.one} (\SI{4.586}{\gram}, \SI{13.6}{\milli\mol}) and potassium ethyl xanthate (\SI{2.180}{\gram}, \SI{13.6}{\milli\mol}) in acetone ({\SI{100}{\milli\litre}}) was stirred at room temperature for \SI{3}{\hour}. The solvent was removed \invacuo to yield a yellow oil which was taken up in water, extracted with \ce{DCM} (2x\SI{50}{\milli\litre}), the organics dried over \ce{MgSO4} and the solvent removed \invacuo to yield a yellow oil which formed a crystalline solid on standing overnight. The solid was purified by column chromatography (4:1 cyclohexane:ethyl acetate) to yield \cmpd{cmpd:xanthateamide.one} as a perlescent white crystaline solid (\SI{4.3523}{\gram}, \SI{11.5}{\milli\mol}, \SI{84.5}{\percent}) on standing.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\IUPAC{S-(1-(4\|-methoxyphenyl)-2\|-(methoxy\|(methyl)amino)\|-2\|-oxoethyl) O-ethyl carbono\|dithioate} (\cmpd+{cmpd:xanthateamide.two})}
+\subsection{\IUPAC{S-(1-(4\|-methoxyphenyl)-2\|-(methoxy\|(methyl)amino)\|-2\|-oxoethyl) O-ethyl carbono\|dithioate} (\cmpd+{cmpd:xanthateamide.two})}
 
-To \cmpd{cmpd:bromoamide.two} (\SI{0.962}{\gram}, \SI{3.33}{\milli\mol}) in acetone ({\SI{20}{\milli\litre}}) at \SI{0}{\celsius} were added potassium ethyl xanthate (\SI{0.587}{\gram}, \SI{3.66}{\milli\mol}) in portions over \SI{15}{\minute}. The stirred reaction was allowed to rise to R.T., and after \SI{3}{\hour} the solvent was removed \invacuo to yield a yellow oil. This oil was taken up in DCM, washed with water (2x\SI{50}{\milli\litre}), brine and dried over \ce{MgSO4} to yield a yellow oil which was purified by flash chromatography (4:1 cyclohexane:ethyl acetate) to yield \cmpd{cmpd:xanthateamide.two} (\SI{0.5728}{\gram}, \SI{1.90}{\milli\mol}, \SI{23}{\percent} overall from \cmpd+{cmpd:meoamide}) as a yellow oil.
+To \cmpd{cmpd:bromoamide.two} (\SI{0.962}{\gram}, \SI{3.33}{\milli\mol}) in acetone ({\SI{20}{\milli\litre}}) at \SI{0}{\celsius} were added potassium ethyl xanthate (\SI{0.587}{\gram}, \SI{3.66}{\milli\mol}) in portions over \SI{15}{\minute}. The stirred reaction was allowed to rise to R.T., and after \SI{3}{\hour} the solvent was removed \invacuo to yield a yellow oil. This oil was taken up in DCM, washed with water (2x\SI{50}{\milli\litre}), brine and dried over \ce{MgSO4} to yield a yellow oil which was purified by flash chromatography (4:1 cyclohexane:ethyl acetate) to yield \cmpd{cmpd:xanthateamide.two} (\SI{0.5728}{\gram}, \SI{1.90}{\milli\mol}, \SI{48}{\percent} overall from \cmpd+{cmpd:meoamide}) as a yellow oil.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cmpd*{cmpd:thioamide.one} % Define the bromo first
 
-\section{General Procedure for \cmpd+{cmpd:thioamide}:
+\subsection{General Procedure for \cmpd+{cmpd:thioamide}:
 Example with \IUPAC{2-\|(4-methoxyphenyl)-\|2-\|mercapto-N-\|methoxy-N-\|methylacetamide} (\cmpd+{cmpd:thioamide.two})}
 
 Piperidine (\SI{0.2}{\milli\litre}, \SI{1.93}{\milli\mol}) was added dropwise to a solution of \cmpd{cmpd:xanthateamide.two} (\SI{0.5757}{\gram}, \SI{1.75}{\milli\mol}) in dry degassed \ce{DCM} under argon on a ice/water bath. An further 0.4 eq of \ch{piperidine} was added after \SI{1}{\hour}.
 
 \ce{HCl} (\SI{1}{\Molar}, \SI{50}{\milli\litre}) was added after a further hour, the organics separated, washed with \ce{HCl} (\SI{1}{\Molar}, 2x\SI{25}{\milli\litre}, brine, dried over \ce{MgSO4}, and evaporated \invacuo. The residue was purified by flash chromotography (4:1 cyclohexane:ethyl acetate with \SI{1}{\percent} formic acid) to yield \cmpd{cmpd:thioamide.two} (\SI{0.3172}{\gram}, \SI{1.291}{\milli\mol}, \SI{73}{\percent}) as a yellow oil.
 
-    \subsection{\IUPAC{2-\|(4-bromophenyl)-\|2-\|mercapto-N-\|methoxy-N-\|methylacetamide} (\cmpd+{cmpd:thioamide.one})}
+    \subsubsection{\IUPAC{2-\|(4-bromophenyl)-\|2-\|mercapto-N-\|methoxy-N-\|methylacetamide} (\cmpd+{cmpd:thioamide.one})}
     Product \cmpd{cmpd:thioamide.one} obtained from pure fractions as a white crystalline solid (\SI{41}{\percent}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{General Procedure for \cmpd+{cmpd:DMTamide}: Example with \IUPAC{2-(4\|-bromo\|phenyl)-\|N-methoxy-\|N-methyl-2-\|(4,4'\|-dimethoxy\|trityl\|thio)\|acetamide} (\cmpd+{cmpd:DMTamide.one})}
+\subsection{General Procedure for \cmpd+{cmpd:DMTamide}: Example with \IUPAC{2-(4\|-bromo\|phenyl)-\|N-methoxy-\|N-methyl-2-\|(4,4'\|-dimethoxy\|trityl\|thio)\|acetamide} (\cmpd+{cmpd:DMTamide.one})}
 
 To a stirred solution of \cmpd{cmpd:thioamide.one} (\SI{1.069}{\gram}, \SI{3.68}{\milli\mol}) in DCM was added \IUPAC{4,4'\|-dimethoxy\|trityl chloride} (\SI{1.372}{\gram}, \SI{4.05}{\milli\mol}) followed by triethylamine (\SI{0.56}{\milli\litre}, \SI{4.05}{\milli\mol}). After \SI{1}{\hour} an additional 0.2 eq of both \ce{4,4'-DMT.Cl} and triethylamine were added. After a further \SI{30}{\minute} the organics were washed with water (2x\SI{70}{\milli\litre}), dried over \ce{MgSO4}, and evaporated \invacuo. The crude was purified by flash column chromatography (4:1 cyclohexane:ethyl acetate + \SI{0.5}{\percent} DMEA) to yield \cmpd{cmpd:DMTamide.one} as a fine white crystalline solid (\SI{1.8419}{\gram}, \SI{3.1}{\milli\mol}, \SI{85}{\percent}).
 
-    \subsection{\IUPAC{2-(4\|-methyoxy\|phenyl)-\|N-methoxy-\|N-methyl-2-\|(4,4'\|-\|dimethoxy\|trityl\|thio)\|acetamide} (\cmpd+{cmpd:DMTamide.two})}
+    \subsubsection{\IUPAC{2-(4\|-methyoxy\|phenyl)-\|N-methoxy-\|N-methyl-2-\|(4,4'\|-\|dimethoxy\|trityl\|thio)\|acetamide} (\cmpd+{cmpd:DMTamide.two})}
     Product \cmpd{cmpd:DMTamide.two} (\SI{0.5517}{\gram}, \SI{1.02}{\milli\mol}, \SI{79}{\percent}) was obtained as a straw yellow crystalline solid.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{General Procedure for \cmpd+{cmpd:DMTaldehyde}: Example with \IUPAC{2-(4\|-bromophenyl)\|-2-(\|4,4'\|-dimethoxy\|trityl\|thio)\|acetaldehyde} (\cmpd+{cmpd:DMTaldehyde.one})}
+\subsection{General Procedure for \cmpd+{cmpd:DMTaldehyde}: Example with \IUPAC{2-(4\|-bromophenyl)\|-2-(\|4,4'\|-dimethoxy\|trityl\|thio)\|acetaldehyde} (\cmpd+{cmpd:DMTaldehyde.one})}
 
 A solution of \ce{LiAlH4} (\SI{3}{\Molar} in \ce{THF}, \SI{220}{\micro\litre}) was added dropwise over the course of \SI{10}{minute} to a stirred solution of the amide \cmpd{cmpd:bromoDMTamide} (\SI{1.068}{\gram}, \SI{3.68}{\milli\mol}) in dry THF (\SI{30}{\milli\litre} under argon while cooling in a dry ice/\ce{isopropanol} bath.
 
-The reaction was quenched after \SI{30}{\minute} by additon of \ce{NaHSO4} {\SI{1}{\Molar}, \SI{30}{\milli\litre}) dropwise at first, followed by DCM (\SI{100}{\milli\litre}) and water (\SI{50}{\milli\litre}. The organics were separated, washed with \ce{NaHSO4} solution (\SI{1}{\Molar}, \SI{50}{\milli\litre}) and the combined aqueous washes were back extracted with DCM (\SI{20}{\milli\litre}). The combined organics were dried over \ce{MgSO4} and the solvent evaporated \invacuo to yield a yellow oil which was purified by flash chromatography (4:1 cyclohexane:ethyl acetate with \SI{0.5}{\percent} DMEA) to yield \cmpd{cmpd:DMTaldehyde.ONE} (\SI{0.2112}{\gram}, \SI{0.40}{\milli\mol}, \SI{61}{\percent}) as a red crystalline solid.
+The reaction was quenched after \SI{30}{\minute} by additon of \ce{NaHSO4} {\SI{1}{\Molar}, \SI{30}{\milli\litre}) dropwise at first, followed by DCM (\SI{100}{\milli\litre}) and water (\SI{50}{\milli\litre}. The organics were separated, washed with \ce{NaHSO4} solution (\SI{1}{\Molar}, \SI{50}{\milli\litre}) and the combined aqueous washes were back extracted with DCM (\SI{20}{\milli\litre}). The combined organics were dried over \ce{MgSO4} and the solvent evaporated \invacuo to yield a yellow oil which was purified by flash chromatography (4:1 cyclohexane:ethyl acetate with \SI{0.5}{\percent} DMEA) to yield the protected auxillary \cmpd{cmpd:DMTaldehyde.one} (\SI{0.2112}{\gram}, \SI{0.40}{\milli\mol}, \SI{61}{\percent}) as a red crystalline solid.
 
-    \subsection{\IUPAC{2-(4\|-methoxyphenyl)\|-2-(\|4,4'\|-dimethoxy\|trityl\|thio)\|acetaldehyde} (\cmpd+{cmpd:DMTaldehyde.two}}
-    Product \cmpd{cmpd:DMTaldehyde.two} (\SI{0.1884}{\gram}, \SI{0.389}{\milli\mol}, \SI{78}{\percent}) was obtained as a red crystalline solid.
+    \subsubsection{\IUPAC{2-(4\|-methoxyphenyl)\|-2-(\|4,4'\|-dimethoxy\|trityl\|thio)\|acetaldehyde} (\cmpd+{cmpd:DMTaldehyde.two}}
+    Protected auxillary \cmpd{cmpd:DMTaldehyde.two} (\SI{0.1884}{\gram}, \SI{0.389}{\milli\mol}, \SI{78}{\percent}) was obtained as a red crystalline solid.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{General Procedure for addition of auxiliary to peptide: Example with \cmpd+{cmpd:DMTaldehyde.one} and \IUPAC{GRAEYSGLG} (\cmpd+{cmpd:auxiliarypeptide.one})}
+
+\ch{NaBH3CN} (\SI{8.5}{\milli\gram}, \SI{135}{\micro\mole}, 15 eq) was added to auxiliary \cmpd{cmpd:DMTaldehyde.one} (1 eq) in \SI{350}{\micro\litre} of a NMP:i-PrOH:AcOH (4:1 and \SI{5}{\percent}) solution. Upon cmplete dissolution the mixture was shaken with the pre-swelled peptide on solid support for \SI{6}{\hour}. The peptide was cleaved by shaking with a cleavage mixture (95:5 TFA:TIS; \SI{2}{\milli\litre}) for \SI{2}{\hour}, percipitated with cold \ch{Et2O} and centrifigued at 20000 RPM for \SI{20}{\minute}. The crude peptide was purified by preparative RP-HPLC to provide the desired peptide \cmpd{cmpd:auxiliarypeptide.one}.
+
+MS analysis, predicted, actual
+
+    \subsubsection{Addition of auxiliary \cmpd+{cmpd:DMTaldehyde.two} and \IUPAC{GRAEYSGLG} (\cmpd+{cmpd:auxiliarypeptide.two})}}
+
+    The ligation was carried run for \SI{19}{\hour} at which point the peptide was cleaved and purified as described to provide the desired peptide \cmpd{cmpd:auxiliarypeptide.two}.
+
+MS analysis, predicted, actual
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ----------------------------------------------------------
+
+\section{Native Chemical Ligation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{General Procedure: Peptide Ligation}
+
+Auxiliary peptide \cmpd{cmpd:auxiliarypeptide} (1 eq) and peptide thioester \cmpd{cmpd:thioester} (1 eq) were disolved in degassed ligation buffer (\SI{10}{\percent} \ch{CH3CN}, \SI{100}{\milli\Molar} TCEP, \SI{100}{\milli\Molar} \ch{Na2HPO4}, \SI{3}{\percent} thiophenol) which had been adjusted to pH 7.5 with \SI{2}{\Molar} \ch{NaOH}. The reaction mixture was shaken at room temperature until UPLC analysis indicated complete consumption of the auxiliary peptide. The auxiliary dipetide was purified by preparative RP-HPLC.
+
+\textbf{LYRAG-(Br-Aux)-GRAEYSGLG-\sub{2} (\cmpd{cmpd:auxiliarydipeptide.one}):} Mass Spec, predicted, observed. \SI{83}{\percent} yield.
+\textbf{LYRAG-(MeO-Aux)-GRAEYSGLG-NH\sub{2} (\cmpd{cmpd:auxiliarydipeptide.two}):} Mass Spec, predicted, observed. yield
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ------------------------------------------------------------------------
+
+\section{General Procedure: Auxiliary Cleavage}
+
+A solution of ligated auxiliary peptide \cmpd{cmpd:auxiliarydipeptide} in degassed cleavage solution (20-400 mM TCEP, XXXXX morpholine) was shaken at the experimental temperature until UPLC analysis indicated complete consumption of the ligated auxiliary peptide. The yield of the native dipeptide was determined by UPLC. (WAS IT?)
 
 % ------------------------------------------------------------------------
 
