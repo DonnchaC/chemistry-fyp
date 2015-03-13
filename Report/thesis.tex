@@ -1,45 +1,44 @@
 %input macros (i.e. write your own macros file called MacroFile1.tex)
 %\include{Macros/MacroFile1}
 
-\documentclass[oneside,12pt, article]{Classes/CUEDthesisPSnPDF}
-%\documentclass[oneside,12pt]{report}
+%\documentclass[oneside,12pt, article]{Classes/CUEDthesisPSnPDF}
+\documentclass[oneside]{report}
 
-\ifpdf
-    \pdfinfo { /Title  (CUED PhD and MPhil Thesis Classes)
-               /Creator (TeX)
-               /Producer (pdfTeX)
-               /Author (Harish Bhanderi harish.bhanderi@cantab.net)
-               /CreationDate (D:20030101000000)  %format D:YYYYMMDDhhmmss
-               /ModDate (D:20030815213532)
-               /Subject (Writing a PhD thesis in LaTeX)
-               /Keywords (PhD, Thesis)}
-    \pdfcatalog { /PageMode (/UseOutlines)
-                  /OpenAction (fitbh)  }
-\fi
+% \ifpdf
+%     \pdfinfo { /Title  (CUED PhD and MPhil Thesis Classes)
+%                /Creator (TeX)
+%                /Producer (pdfTeX)
+%                /Author (Harish Bhanderi harish.bhanderi@cantab.net)
+%                /CreationDate (D:20030101000000)  %format D:YYYYMMDDhhmmss
+%                /ModDate (D:20030815213532)
+%                /Subject (Writing a PhD thesis in LaTeX)
+%                /Keywords (PhD, Thesis)}
+%     \pdfcatalog { /PageMode (/UseOutlines)
+%                   /OpenAction (fitbh)  }
+% \fi
 
-\title{Writing a PhD Thesis\\[1ex]
-        in \LaTeXe}
+\title{Extended Native Chemical Ligation with Removable Acyl Transfer Auxiliaries}
 
-\ifpdf
-  \author{\href{mailto:harish.bhanderi@cantab.net}{Harish Bhanderi}}
-  \collegeordept{\href{http://www.eng.cam.ac.uk}{Department of Engineering}}
-  \university{\href{http://www.cam.ac.uk}{University of Cambridge}}
-% insert below the file name that contains the crest in-place of 'UnivShield'
-  \crest{\includegraphics[width=30mm]{UnivShield}}
-\else
-  \author{Harish Bhanderi}
-  \collegeordept{Department of Engineering}
-  \university{University of Cambridge}
-% insert below the file name that contains the crest in-place of 'UnivShield'
-  \crest{\includegraphics[bb = 0 0 292 336, width=30mm]{UnivShield}}
-\fi
+% \ifpdf
+%   \author{\href{mailto:harish.bhanderi@cantab.net}{Donncha O'Cearbhaill}}
+%   \collegeordept{\href{Department of Chemistry}}
+%   \university{\href{http://www.cam.ac.uk}{Trinity College, University of Dublin}}
+% % insert below the file name that contains the crest in-place of 'UnivShield'
+%   \crest{\includegraphics[width=30mm]{UnivShield}}
+% \else
+%   \author{Donncha O'Cearbhaill}
+%   \collegeordept{Department of Chemistry}
+%   \university{Trinity College, University of Dublin}
+% % insert below the file name that contains the crest in-place of 'UnivShield'
+%   \crest{\includegraphics[bb = 0 0 92 336, width=30mm]{UnivShield}}
+% \fi
+
+\author{Donncha O'Cearbhaill}
 %
 % insert below the file name that contains the crest in-place of 'UnivShield'
 % \crest{\IncludeGraphicsW{UnivShield}{40mm}{14 14 73 81}}
 %
 %\renewcommand{\submittedtext}{change the default text here if needed}
-\degree{Doctor of Philosophy}
-\degreedate{Yet to be decided}
 
 % turn of those nasty overfull and underfull hboxes
 \hbadness=10000
@@ -47,6 +46,7 @@
 
 % Put all the style files you want in the directory StyleFiles and usepackage like this:
 % \usepackage{StyleFiles/watermark}
+\usepackage[export]{adjustbox}%
 \usepackage[version=3]{mhchem}
 
 % - use EPS with pdfLaTeX, essential for chemscheme ----
@@ -63,22 +63,115 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{geometry} % Easy page layout
-\usepackage[small,compact]{titlesec}
+%\usepackage[small,compact]{titlesec}
 \usepackage{glossaries}
 
 \usepackage{booktabs}
 \usepackage{multirow}
 
+\usepackage{tocbibind}
+%\usepackage[square, sort, numbers, authoryear]{natbib}
+\usepackage{parskip}
+\usepackage{subfig}
+\usepackage{textgreek}
+
+\usepackage[small, compact]{titlesec}
+\titleformat{\chapter}{}{}{0em}{\bf\LARGE}
+% \titleformat{\chapter}[block]
+%   {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge}
+% \titlespacing*{\chapter}{0pt}{-19pt}{0pt}
+
+\usepackage[square, super, comma]{natbib}
+
 % % \titleformat*{\section}{\LARGE\bfseries}
 % % \titleformat*{\subsection}{\Large\bfseries}
 % \titleformat{\section}
-% {\normalfont\large\bfseries}{\thesection}{0.7em}{}
+% {\normalfont\large\bfseries}{\thesection}{0.8em}{}
 
 % \titleformat{\subsection}
 % {\normalfont\large\bfseries}{\thesubsection}{0.6em}{}
 % % \titleformat*{\subsubsection}{\large\bfseries}
 % % \titleformat*{\paragraph}{\large\bfseries}
 % % \titleformat*{\subparagraph}{\large\bfseries}
+
+    % \usepackage[ pdftex, plainpages = false, pdfpagelabels,
+    %              pdfpagelayout = OneColumn, % display single page, advancing flips the page - Sasa Tomic
+    %              bookmarks,
+    %              bookmarksopen = true,
+    %              bookmarksnumbered = true,
+    %              breaklinks = true,
+    %              linktocpage,
+    %              pagebackref,
+    %              colorlinks = false,
+    %              linkcolor = blue,
+    %              urlcolor  = blue,
+    %              citecolor = red,
+    %              anchorcolor = green,
+    %              hyperindex = true,
+    %              hyperfigures
+    %              ]{hyperref}
+    % \usepackage[pdftex]{graphicx}
+    % \DeclareGraphicsExtensions{.png, .jpg, .pdf}
+\usepackage[hidelinks]{hyperref}
+
+  % ACKNOWLEDGEMENTS
+  %
+  % The acknowledgements environment puts a large, bold, centered
+  % "Acknowledgements" label at the top of the page. The acknowledgements
+  % themselves appear in a quote environment, i.e. tabbed in at both sides, and
+  % on its own page.
+
+  \newenvironment{acknowledgements}
+  {\pagestyle{empty}
+  \begin{center}
+  \vspace*{1.5cm}
+  {\Large \bfseries Acknowledgements}
+  \end{center}
+  \vspace{0.5cm}
+  \begin{quote}}
+  {\end{quote}}
+
+  % The acknowledgementslong environment puts a large, bold, centered
+  % "Acknowledgements" label at the top of the page. The acknowledgement itself
+  % does not appears in a quote environment so you can get more in.
+
+  \newenvironment{acknowledgementslong}
+  {\pagestyle{empty}
+  \begin{center}
+  \vspace*{1.5cm}
+  {\Large \bfseries Acknowledgements}
+  \end{center}
+  \vspace{0.5cm}\begin{quote}}
+  {\end{quote}}
+
+  %ABSTRACT
+  %
+  %The abstract environment puts a large, bold, centered "Abstract" label at
+  %the top of the page. The abstract itself appears in a quote environment,
+  %i.e. tabbed in at both sides, and on its own page.
+
+  \newenvironment{abstracts} {\pagestyle{empty}
+    \begin{center}
+    \vspace*{1.5cm}
+    {\Large \bfseries  Abstract}
+    \end{center}
+    \vspace{0.5cm}
+     \begin{quote}}
+  {\end{quote}}
+
+  %The abstractlong environment puts a large, bold, centered "Abstract" label at
+  %the top of the page. The abstract itself does not appears in a quote
+  %environment so you can get more in.
+
+  \newenvironment{abstractslong} {\pagestyle{empty}
+    \begin{center}
+    \vspace*{1.5cm}
+    {\Large \bfseries  Abstract}
+    \end{center}
+    \vspace{0.5cm} \begin{quote}}
+  {\end{quote}}
+
+
 
 % - optional command that make compound names easier to see ----
 \renewcommand*{\schemerefformat}{%
@@ -91,6 +184,7 @@
   \let\|\relax
 }
 
+\usepackage{setspace}
 \doublespacing
 
 \begin{document}
@@ -107,30 +201,39 @@
 % \end{abstractseparate}
 
 
-
-
-% Using the watermark package which is in StyleFiles/
-% and to remove DRAFT COPY ONLY appearing on the top of all pages comment out below line
-%\watermark{DRAFT COPY ONLY}
-
-
-\maketitle
+% \maketitle
 
 %set the number of sectioning levels that get number and appear in the contents
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
 
 % \frontmatter % book mode onlyd
 \pagenumbering{roman}
+
 \include{Acknowledgement/acknowledgement}
 \include{Abstract/abstract}
 
-\tableofcontents
+\makeatletter
+\@starttoc{toc}
+\makeatother
+
 % Generate the glossary
 % \makeglossaries
 
-\listoffigures
+% \listoffigures
 \listofschemes
+
+% \begin{longtable}{@{}p{1cm}@{}p{\dimexpr\textwidth-1cm\relax}@{}}
+% \nomenclature{DCM}{Dichloromethane}%
+% \nomenclature{TEA}{Triethylamine}%
+% \nomenclature{SPPS}{Solid Phase Peptide Synthesis}%
+% \nomenclature{TFA}{Trifluroacetic Acid}%
+% \nomenclature{UPLC}{Ultra-Performance Liquid Chromatography}
+% \nomenclature{NBS}{N-bromosuccinimide}
+% \nomenclature{AIBN}{azobisisobutyronitrile}
+% \nomenclature{TCEP}{tris(2-carboxyethyl)phosphine}
+% \nomenclature{NCL}{Native Chemical Ligation}
+% \end{longtable}
 
 
 % \printnomenclature  %% Print the nomenclature
@@ -143,15 +246,17 @@
 \include{Conclusions/conclusions}
 \include{Experimental/experimental}
 
-% \backmatter % book mode only
-\appendix
-\include{Appendix1/appendix1}
-
-\bibliographystyle{plainnat}
+% \bibliographystyle{unsrtnat}
+\bibliographystyle{angew}
 %\bibliographystyle{Classes/CUEDbiblio}
 %\bibliographystyle{Classes/jmb}
 %\bibliographystyle{Classes/jmb} % bibliography style
 \renewcommand{\bibname}{References} % changes default name Bibliography to References
 \bibliography{References/references} % References file
+
+% \backmatter % book mode only
+\renewcommand{\appendixname}{APPENDIX}
+\appendix
+\include{Appendix/appendix1}
 
 \end{document}
